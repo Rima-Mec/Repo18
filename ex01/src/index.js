@@ -6,14 +6,13 @@ function*multiplication(x) {
         
 
         myArr.push(x);
-        return myArr; 
     }
+        return myArr; 
 }
 var num = multiplication(3);
-for ( let x of num) {
-    console.log(num.next());
-    console.log(num.next());
-    console.log(num.next());
+for ( let i = 0; i < 3; i++) {
+    console.log(num.next().value);
+    
 }
 
 
